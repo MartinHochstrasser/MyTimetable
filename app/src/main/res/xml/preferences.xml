@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="@string/settings_fragment_enable_key"
+        android:summary="@string/settings_fragment_enable_description"
+        android:title="@string/settings_fragment_enable_title" />
+    <EditTextPreference
+        android:defaultValue="@string/settings_fragment_limit_departures_default"
+        android:inputType="number"
+        android:key="@string/settings_fragment_limit_departures_key"
+        android:summary="@string/settings_fragment_limit_departures_description"
+        android:title="@string/settings_fragment_limit_departures_title" />
+
+    <PreferenceScreen android:title="@string/settings_fragment_advanced_screen_title">
+        <PreferenceCategory android:title="@string/settings_fragment_geofence_category_title">
+            <EditTextPreference
+                android:defaultValue="@string/settings_fragment_geofence_radius_default"
+                android:inputType="number"
+                android:key="@string/settings_fragment_geofence_radius_key"
+                android:summary="@string/settings_fragment_geofence_radius_description"
+                android:title="@string/settings_fragment_geofence_radius_title" />
+            <EditTextPreference
+                android:defaultValue="@string/settings_fragment_geofence_dwelling_default"
+                android:inputType="number"
+                android:key="@string/settings_fragment_geofence_dwelling_key"
+                android:summary="@string/settings_fragment_geofence_dwelling_description"
+                android:title="@string/settings_fragment_geofence_dwelling_title" />
+            <EditTextPreference
+                android:defaultValue="@string/settings_fragment_geofence_responsiveness_default"
+                android:inputType="number"
+                android:key="@string/settings_fragment_geofence_responsiveness_key"
+                android:summary="@string/settings_fragment_geofence_responsiveness_description"
+                android:title="@string/settings_fragment_geofence_responsiveness_title" />
+            <Preference
+                android:summary="@string/settings_fragment_geofence_current_geofences_list_description"
+                android:title="@string/settings_fragment_geofence_current_geofences_list_title">
+                <intent
+                    android:targetClass="ch.bretscherhochstrasser.android.poc.mytimetable.geofences.StationListActivity"
+                    android:targetPackage="ch.bretscherhochstrasser.android.poc.mytimetable" />
+            </Preference>
+        </PreferenceCategory>
+
+        <PreferenceCategory android:title="@string/settings_fragment_location_updates_category_title">
+            <EditTextPreference
+                android:defaultValue="@string/settings_fragment_location_updates_interval_default"
+                android:inputType="number"
+                android:key="@string/settings_fragment_location_updates_interval_key"
+                android:summary="@string/settings_fragment_location_updates_interval_description"
+                android:title="@string/settings_fragment_location_updates_interval_title" />
+            <EditTextPreference
+                android:defaultValue="@string/settings_fragment_location_updates_min_interval_default"
+                android:inputType="number"
+                android:key="@string/settings_fragment_location_updates_min_interval_key"
+                android:summary="@string/settings_fragment_location_updates_min_interval_description"
+                android:title="@string/settings_fragment_location_updates_min_interval_title" />
+            <EditTextPreference
+                android:defaultValue="@string/settings_fragment_location_updates_min_distance_default"
+                android:inputType="number"
+                android:key="@string/settings_fragment_location_updates_min_distance_key"
+                android:summary="@string/settings_fragment_location_updates_min_distance_description"
+                android:title="@string/settings_fragment_location_updates_min_distance_title" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+</PreferenceScreen>

@@ -1,0 +1,4 @@
+Put your copy of the wearable-preview-support.jar into this directory.
+
+To get the jar you must sign up for the Android Wear Developer Preview.
+http://developer.android.com/wear/preview/start.html

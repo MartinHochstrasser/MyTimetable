@@ -1,0 +1,30 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        applicationId "ch.bretscherhochstrasser.android.poc.mytimetable"
+        minSdkVersion 19
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('wearable_preview_lib/wearable-preview-support.jar')
+    compile 'com.android.support:support-v4:19.+'
+    compile 'com.google.android.gms:play-services:4.2.42'
+    compile 'com.google.guava:guava:17.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'nl.qbusict:cupboard:2.0.1'
+}

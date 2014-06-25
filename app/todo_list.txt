@@ -1,0 +1,4 @@
+TODOs:
+
+- document code and put in license info
+

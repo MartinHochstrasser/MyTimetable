@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Timetable</string>
+
+    <string name="title_activity_station_list">Current Station Geofences</string>
+
+    <string name="departure_notification_title_format">Departures from %s</string>
+    <string name="departure_notification_content_text_format">%1$d departures from %2$s</string>
+    <string name="departure_notification_delta_time_format">%d\':</string>
+    <string name="departure_notification_destination_format">➔ %s</string>
+    <string name="departure_notification_action_connection_title">Find connection</string>
+
+    <string name="connection_notification_to_format">to: %s</string>
+    <string name="connection_notification_duration_format">Takes: %s</string>
+    <string name="connection_notification_transfers_format">Transfers: %d</string>
+    <string name="connection_notification_departing_format">departing at "%1$tH:%1$tM</string>
+    <string name="connection_notification_arriving_format">arriving at "%1$tH:%1$tM</string>
+    <string name="connection_notification_platform_format">on platform %s</string>
+    <string name="connection_notification_departure_arrival_divider">➔</string>
+    <string name="connection_notification_walk_format">walk %s</string>
+
+    <string name="settings_fragment_enable_title">Enable</string>
+    <string name="settings_fragment_enable_key">departure_notifications_enabled</string>
+    <string name="settings_fragment_enable_description">Notify about departures for a station automatically when I am there</string>
+    <string name="settings_fragment_limit_departures_title">Departures limit</string>
+    <string name="settings_fragment_limit_departures_key">departures_limit</string>
+    <string name="settings_fragment_limit_departures_default">8</string>
+    <string name="settings_fragment_limit_departures_description">Number of departures to load for a station</string>
+    <string name="settings_fragment_advanced_screen_title">Advanced settings</string>
+    <string name="settings_fragment_geofence_category_title">Geofence settings</string>
+    <string name="settings_fragment_geofence_radius_title">Geofence radius</string>
+    <string name="settings_fragment_geofence_radius_key">geofence_radius</string>
+    <string name="settings_fragment_geofence_radius_default">25</string>
+    <string name="settings_fragment_geofence_radius_description">Radius around station in meters to enter station</string>
+    <string name="settings_fragment_geofence_dwelling_title">Geofence dwelling time</string>
+    <string name="settings_fragment_geofence_dwelling_key">geofence_dwelling</string>
+    <string name="settings_fragment_geofence_dwelling_default">7</string>
+    <string name="settings_fragment_geofence_dwelling_description">Time to spend at station (in seconds) to trigger departure notification</string>
+    <string name="settings_fragment_geofence_responsiveness_title">Geofence responsiveness</string>
+    <string name="settings_fragment_geofence_responsiveness_key">geofence_responsiveness</string>
+    <string name="settings_fragment_geofence_responsiveness_default">5</string>
+    <string name="settings_fragment_geofence_responsiveness_description">Geofence API responsiveness setting in seconds. The lower the value the more battery is used for geofencing.</string>
+    <string name="settings_fragment_geofence_current_geofences_list_title">Current geofences</string>
+    <string name="settings_fragment_geofence_current_geofences_list_description">Show list of currently active station geofences</string>
+    <string name="settings_fragment_location_updates_category_title">Location update settings</string>
+    <string name="settings_fragment_location_updates_interval_title">Interval</string>
+    <string name="settings_fragment_location_updates_interval_description">Regular time interval between background station updates in seconds</string>
+    <string name="settings_fragment_location_updates_interval_default">300</string>
+    <string name="settings_fragment_location_updates_interval_key">location_updates_interval</string>
+    <string name="settings_fragment_location_updates_min_interval_title">Minimum interval</string>
+    <string name="settings_fragment_location_updates_min_interval_description">Minimum time interval between background station updates in seconds</string>
+    <string name="settings_fragment_location_updates_min_interval_default">120</string>
+    <string name="settings_fragment_location_updates_min_interval_key">location_updates_min_interval</string>
+    <string name="settings_fragment_location_updates_min_distance_title">Minimum distance</string>
+    <string name="settings_fragment_location_updates_min_distance_description">Minimum distance between background station updates in meters</string>
+    <string name="settings_fragment_location_updates_min_distance_default">250</string>
+    <string name="settings_fragment_location_updates_min_distance_key">location_updates_min_distance</string>
+    <string name="departure_notification_action_connection_voice_input_title">say destination</string>
+
+</resources>
